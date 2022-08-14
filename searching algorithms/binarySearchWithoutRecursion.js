@@ -1,7 +1,9 @@
 const BinarySearch = (arr, key, size) => {
     let low = 0;
     let end = size-1;
-    
+    if(size == 0){
+        return `There is a empty array.`
+    }
     while(low <= end){
         let mid = Math.floor((low + end)/2);
         if(arr[mid] === key){
@@ -13,11 +15,10 @@ const BinarySearch = (arr, key, size) => {
         else{
             low = mid+1
         }
-        mid = (low + end)/2; 
     }
 
     
 }
 
 
-console.log(BinarySearch([1, 3, 10, 17, 18, 30, 35, 44], 17, 8));  
+console.log(BinarySearch([1, 3, 10, 17, 18, 30, 35, 44], 30, 8));  
