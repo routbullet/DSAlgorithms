@@ -73,6 +73,23 @@ class LinkedList{
 
     // get a index
 
+    getAtIndex(index){
+        if(index > this.size){
+            return;
+        }
+        let current = this.head;
+        let count = 0;
+        while(current){
+            if(count === index){
+                console.log(current.data)   
+            }
+            count++
+            current = current.next
+        }
+        return null
+
+    }
+
     // remove a index
 
     // clear list
@@ -119,3 +136,5 @@ objLL.insertAtEnd(50)
 // objLL.clearLinkedList()
 // objLL.displayList() 
 // console.log(objLL)  
+objLL.getAtIndex(2)
+objLL.displayList() 
