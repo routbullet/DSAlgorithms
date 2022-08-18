@@ -94,7 +94,7 @@ class LinkedList{
 
     removeAtIndex(index){
 
-        if(index < 0 && index > this.size){
+        if(index > 0 && index > this.size){
             return;
         }
         let current = this.head
@@ -135,10 +135,6 @@ class LinkedList{
         console.log(output)
     }
 
-
-
-
-
     
 }
 
@@ -163,5 +159,5 @@ objLL.getAtIndex(2)
 objLL.displayList() 
 
 
-// objLL.removeAtIndex(2)
-// objLL.displayList() 
+objLL.removeAtIndex(2)
+objLL.displayList() 
