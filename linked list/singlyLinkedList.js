@@ -53,6 +53,7 @@ const objLL = new LinkedList();
 objLL.insertAtStart(100)
 objLL.insertAtStart(200)
 objLL.insertAtStart(300)
-console.log(objLL)
+console.log(objLL)    
+output
 
-objLL.displayList()
+objLL.displayList()    //output: 300 ==> 200 ==> 100 ==> null
