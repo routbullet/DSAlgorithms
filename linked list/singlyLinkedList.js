@@ -15,10 +15,30 @@ class LinkedList{
     // insert at start
     insertAtStart(data){
         this.head = new Node(data, this.head)
+        this.size++
     }
 
     // insert at end
-    
+    insertAtEnd(data){
+        let lastNode = new Node(data)
+
+        // if there is no node then we will make it our first node
+        if(this.head === null){
+            this.head = lastNode
+            this.size++
+        }
+        else{
+            // if there is already node available
+            let current = this.head
+            while(current.next){
+                current = current.next
+            }
+            current.next = lastNode
+            this.size++
+        }
+
+    }
+
     // insert at index
 
     // get a index
@@ -33,7 +53,7 @@ class LinkedList{
         let current = this.head
         let output = ""
         while(current){
-            output += ` ${current.data} ==>`
+            output += ` ${current.data} ==>`;
             current = current.next;
         }
         output += ' null'
@@ -53,7 +73,7 @@ const objLL = new LinkedList();
 objLL.insertAtStart(100)
 objLL.insertAtStart(200)
 objLL.insertAtStart(300)
+objLL.insertAtEnd(50)
 console.log(objLL)    
-output
 
 objLL.displayList()    //output: 300 ==> 200 ==> 100 ==> null
