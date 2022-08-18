@@ -77,6 +77,11 @@ class LinkedList{
 
     // clear list
 
+    clearLinkedList(){
+        this.head = null
+        this.size = 0
+    }
+
     // display list
 
     displayList(){
@@ -100,13 +105,17 @@ class LinkedList{
 
 const objLL = new LinkedList();
 
-// objLL.insertAtStart(100)
-// objLL.insertAtStart(200)
-// objLL.insertAtStart(300)
-// objLL.insertAtEnd(50)
+objLL.insertAtStart(100)
+objLL.insertAtStart(200)
+objLL.insertAtStart(300)
+objLL.insertAtEnd(50)
+
+// console.log(objLL)    
+// objLL.displayList()    //output: 300 ==> 200 ==> 100 ==> null
 // console.log(objLL)    
 // objLL.insertAtEnd(60)
 // objLL.insertAtStart(400)
 // objLL.insertAtIndex(150,0)
-console.log(objLL)    
-objLL.displayList()    //output: 300 ==> 200 ==> 100 ==> null
+// objLL.clearLinkedList()
+// objLL.displayList() 
+// console.log(objLL)  
