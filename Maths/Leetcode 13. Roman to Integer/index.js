@@ -50,4 +50,6 @@ let s = 'IV' //4
 s = 'III'   //3
 s = 'CD'    //400
 s = 'CM'    //900
+s = 'ID'
+s = 'MD'
 console.log(romanToInt(s))
