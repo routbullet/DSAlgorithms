@@ -9,13 +9,13 @@ beginning of the unsorted list.
 
 const selectionSort = (arr) => {
     for(let i = 0; i < arr.length; i++){
-        let smallestElement = i
+        let smalestIndex = i
         for(j=i+1; j< arr.length; j++){
-            if(arr[smallestElement] > arr[j]){
-                smallestElement = j
+            if(arr[smalestIndex] > arr[j]){
+                smalestIndex = j
             }
         }
-        [arr[i], arr[smallestElement]] = [arr[smallestElement], arr[i]]
+        [arr[i], arr[smalestIndex]] = [arr[smalestIndex], arr[i]]
     }
     return arr
 
