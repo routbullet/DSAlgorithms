@@ -8,6 +8,8 @@
 */
 
 
+
+
 var firstUniqChar = function(s) {
     let dict = {}
     for(let val of s){
