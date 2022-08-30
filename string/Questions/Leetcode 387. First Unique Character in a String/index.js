@@ -37,5 +37,6 @@ var firstUniqChar = function(s) {
     return -1
 };
 
+
 let str = "loveleetcode"  // 2
 console.log(firstUniqChar(str))
