@@ -39,6 +39,6 @@ var maxOperations = function (nums, k) {
 };
 
 let nums = [1, 0, 3, -1, 4, 2],
-  k = 3; // output : 3
+  k = 3; // output : 3  , time complexity - 0(n), space complexity - 0(1)
 
 console.log(maxOperations(nums, k));
